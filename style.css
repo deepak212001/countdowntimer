@@ -2,16 +2,16 @@
 
 body {
     text-align: center;
-    background-color: #131313;
+    background-color: #b4f1ef;
     font-family: 'Poppins', sans-serif;
     background-image: url(img1.jpg);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
 
 }
 
 h1 {
-    color: #290707;
+    color: #00b0ba;
     font-size: 40px;
 }
 
