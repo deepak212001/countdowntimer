@@ -57,6 +57,6 @@ function reset() {
     hours.innerText = 0
     minutes.innerText = 0
     seconds.innerText = 0
-    return;
+  
 }
 
