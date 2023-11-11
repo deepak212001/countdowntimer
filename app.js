@@ -20,8 +20,6 @@ function calculate () {
 
 function calculateTime(endTime) {
     const currentTime = new Date();
-
-    const years = document.querySelector('#countdown-years');
     const days = document.querySelector('#countdown-days');
     const hours = document.querySelector('#countdown-hours');
     const minutes = document.querySelector('#countdown-minutes');
@@ -31,15 +29,13 @@ function calculateTime(endTime) {
         const timeLeft = (endTime - currentTime) / 1000;
 
         console.log(timeLeft);
-        years.innerText = Math.floor(timeLeft / (365*24 * 60 * 60));
-        days.innerText = Math.floor(timeLeft / (24 * 60 * 60))%365;
+        days.innerText = Math.floor(timeLeft / (24 * 60 * 60));
         hours.innerText = Math.floor((timeLeft / (60 * 60)) % 24);
         minutes.innerText = Math.floor((timeLeft / 60) % 60);
         seconds.innerText = Math.floor(timeLeft % 60);
   
 
     } else {
-        years.innerText = 0
         days.innerText = 0
         hours.innerText = 0
         minutes.innerText = 0
